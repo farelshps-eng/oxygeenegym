@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-arabic: 'Cairo', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Outfit', 'Cairo', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-arabic);
+    background-color: #07070b;
+    color: #f3f4f6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    selection-background-color: #dc2626;
+    selection-color: #ffffff;
+  }
+
+  /* Custom athletic scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #09090e;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #22222d;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #dc2626;
+  }
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(220, 38, 38, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(220, 38, 38, 0.45);
+  }
+}
+
+@keyframes flameFloat {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-3px) scale(1.02); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+.animate-glow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+.animate-flame {
+  animation: flameFloat 3s infinite ease-in-out;
+}
+
+/* Glass & metallic dark luxury athletic cards */
+.gym-card {
+  background: linear-gradient(145deg, #13131c 0%, #0c0c12 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gym-card:hover {
+  border-color: rgba(220, 38, 38, 0.45);
+  box-shadow: 0 12px 36px -10px rgba(220, 38, 38, 0.22);
+  transform: translateY(-2px);
+}
+
+/* Luxury athletic badge */
+.badge-flame {
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.2) 0%, rgba(249, 115, 22, 0.15) 100%);
+  border: 1px solid rgba(220, 38, 38, 0.4);
+  color: #ff5252;
+}
+
+/* Mobile responsive carousel styling */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

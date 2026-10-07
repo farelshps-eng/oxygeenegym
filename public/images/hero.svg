@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0508"/>
+      <stop offset="100%" style="stop-color:#450a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <text x="600" y="300" fill="#fca5a5" font-family="Arial,sans-serif" font-size="48" font-weight="bold" text-anchor="middle">OXYGEN GYM</text>
+  <text x="600" y="360" fill="#a3a3a3" font-family="Arial,sans-serif" font-size="22" text-anchor="middle">71'(D3  #HC3,JF ,JE</text>
+</svg>

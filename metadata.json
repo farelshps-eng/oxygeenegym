@@ -1,0 +1,6 @@
+{
+  "name": "OXYGEN GYM - Tripoli, Libya",
+  "description": "الموقع الرسمي لنادي أوكسجين جيم الرياضي في طرابلس، ليبيا. اكتشف المعدات، التمارين، المدربين، الاشتراكات والمرافق مع لوحة تحكم إدارية متكاملة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
